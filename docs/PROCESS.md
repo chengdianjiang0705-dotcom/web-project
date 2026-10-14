@@ -14,6 +14,22 @@ Work began on 15 October 2026 (Asia/Shanghai). The two supplied PDFs are the spe
 
 Each milestone is committed when its corresponding work is complete. Later fixes receive their own commits. `git log --oneline --reverse` is the authoritative commit record.
 
+## Completed stages
+
+| Commit | Actual work |
+| --- | --- |
+| `94950c3` | Record requirements, shared navigation and static tooling. |
+| `3213db0` | Add original garment SVG, five HTML pages and responsive styles. |
+| `2f5cb1a` | Implement independent colors, presets, gallery filters, randomize, reset, sharing and exports. |
+| `84466bf` | Add credited photographs, original visual assets and the Pages workflow. |
+| `5199a3f` | Add the authenticated repository setup helper. |
+| `474adcd` | Refine phone rendering, preserve the first cover and add tested course materials. |
+| `f565beb` | Merge and preserve the remote repository's original initialization commit. |
+
+The remote repository already contained a single `README.md` initialization commit (`4fe835f`). It was fetched and merged, keeping its ancestry and including the original `web-project` heading in the full README. No force push was used.
+
+The repository is public at https://github.com/chengdianjiang0705-dotcom/web-project. A push to `main` runs static checks and state tests, builds the site and publishes it through GitHub Pages. Test results, original cover iterations and real desktop/phone screenshots are committed as process evidence.
+
 ## Decisions
 
 - Use plain HTML, CSS and JavaScript so the state-to-SVG relationship is understandable in the oral defence.

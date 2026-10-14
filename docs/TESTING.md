@@ -20,4 +20,6 @@ Browser: 155.0.4283.45 (headless Chromium / Microsoft Edge).
 
 Desktop screenshots: 1440 px wide. Mobile screenshots: 390 px wide.
 
-All functional checks passed. Visual screenshots must also be inspected before delivery.
+All functional checks passed. The final desktop Home, Color Guide, Color Lab and Outfit Gallery screenshots, mobile Home and Color Lab screenshots, and share cover were visually inspected. The mobile capture's hidden skip-link artifact was corrected and the screenshots were regenerated.
+
+Verified image specifications: Open Graph 1200 × 630 JPEG, 38,721 bytes; favicon 32 × 32 PNG; app icon 180 × 180 PNG; desktop submission screenshot 1440 × 2304; mobile submission screenshot 390 × 3971.

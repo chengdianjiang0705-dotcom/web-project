@@ -27,7 +27,7 @@ The guide's practical outfit examples and wording are project-specific. Tonal dr
 
 - Garment SVG paths: original code-created artwork in `outfit.js`.
 - Header mark and favicon: original CSS/vector shapes.
-- Course share cover and square icons: original code-created artwork, reproducible with `scripts/make_assets.py` and Pillow.
+- Square icons and first cover: original code-created artwork, reproducible with `scripts/make_assets.py` and Pillow. Final cover: `scripts/make-cover.mjs` and sharp, using the site's SVG paths; source retained in `images/og-image.svg`. The first exported cover remains in `docs/design/cover-v1.jpg`.
 - Copy and presets: written for this project with AI assistance; no external article is reproduced.
 - Fonts: system Arial / Microsoft YaHei / Georgia; no remote font request or bundled third-party font.
 
