@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#263e34">
+  <title>Color Lab — Outfit Color Lab</title>
+  <meta name="description" content="Choose a top, trousers or shoes and experiment with ten named colors, custom colors and six outfit presets.">
+  <meta property="og:title" content="Color Lab — Outfit Color Lab">
+  <meta property="og:description" content="Choose a top, trousers or shoes and experiment with ten named colors, custom colors and six outfit presets.">
+  <meta property="og:image" content="https://outfit-color-lab.daintybow32.chatgpt.site/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Outfit Color Lab. Explore colors before you get dressed. Three illustrated outfit palettes.">
+  <meta property="og:url" content="https://outfit-color-lab.daintybow32.chatgpt.site/lab.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://outfit-color-lab.daintybow32.chatgpt.site/images/og-image.jpg">
+  <link rel="canonical" href="https://outfit-color-lab.daintybow32.chatgpt.site/lab.html">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="nav.js"></script>
+  <script type="module" src="lab.js"></script>
+</head>
+<body data-page="lab">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-header></header>
+  <main id="main">
+    <section class="page-intro container"><div class="eyebrow"><span class="eyebrow-dot"></span> YOUR IDEAS, IN FULL COLOR</div><div class="intro-row"><div><h1>Let's put it together.</h1><p>Pick a piece. Try a color. See where a little curiosity takes you.</p><p class="subtitle-cn" lang="zh-CN">选择部位，点击颜色，实时预览你的搭配。</p></div><p class="right-note">A place to experiment.<br>No right or wrong combinations.</p></div></section>
+    <div class="lab-layout container">
+      <section class="preview-panel" aria-labelledby="preview-title"><div class="preview-heading"><h2 id="preview-title" class="section-label">YOUR OUTFIT CANVAS</h2><span class="preview-live">LIVE PREVIEW</span></div><div id="outfit-preview"></div><span class="preview-annotation annotation-top" aria-hidden="true">The top</span><span class="preview-annotation annotation-trousers" aria-hidden="true">The trousers</span><span class="preview-annotation annotation-shoes" aria-hidden="true">The shoes</span><p class="preview-caption">A new perspective on your everyday pieces.</p></section>
+      <section class="controls-panel" aria-label="Outfit color controls">
+        <div class="control-section"><h2 class="control-title"><span>01</span> Choose your piece</h2><div class="part-tabs" aria-label="Garment to edit">
+          <button class="part-tab" type="button" data-part="top" aria-pressed="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="m8 4-5 3 3 5 2-1v9h8v-9l2 1 3-5-5-3q-4 5-8 0Z"/></svg>Top</button>
+          <button class="part-tab" type="button" data-part="trousers" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M7 3h10l1 18h-5l-1-11-1 11H6Z"/><path d="M7 6h10"/></svg>Trousers</button>
+          <button class="part-tab" type="button" data-part="shoes" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="m5 9 6 1 3 5 6 1 1 4H3l-1-4Z"/><path d="M2 18h19M10 12l3-1M11 14l3-1"/></svg>Shoes</button>
+        </div></div>
+        <div class="control-section"><div class="color-section-heading"><h2 class="control-title"><span>02</span> Find your color</h2><span class="current-color-label" id="editing-label">Editing: Top</span></div><div class="color-options" id="color-options" aria-label="Available colors"></div><label class="custom-color" for="custom-color"><input type="color" id="custom-color" value="#7aa5c6"><span>Have another color in mind? Try your own.</span><span class="custom-hex" id="custom-hex">#7AA5C6</span></label></div>
+        <div class="lab-action-row"><button class="button" type="button" id="randomize"><span aria-hidden="true">⤨</span> Surprise me</button><button class="button secondary" type="button" id="reset"><span aria-hidden="true">↺</span> Start fresh</button></div>
+        <div class="current-palette"><div class="palette-label"><span>YOUR CURRENT PALETTE</span><span aria-hidden="true">● ● ●</span></div><div class="current-palette-rows" id="current-palette"></div></div>
+        <div class="lab-utilities"><button class="utility-button" type="button" id="copy-palette"><span aria-hidden="true">▣</span> Copy palette</button><button class="utility-button" type="button" id="copy-link"><span aria-hidden="true">↗</span> Share look</button><button class="utility-button" type="button" id="download-look"><span aria-hidden="true">↓</span> Save SVG</button></div>
+        <p class="status-message" id="lab-status" role="status" aria-live="polite" aria-atomic="true"></p>
+      </section>
+    </div>
+    <div class="lab-notice container"><p>Colors are illustrative and may look different on real clothes. Material and light make a difference.</p><a href="guide.html">Need a little color guidance? →</a></div>
+    <aside class="preset-bar container"><div><div class="section-label">A LITTLE INSPIRATION GOES A LONG WAY</div><p>Not sure where to start? Borrow a palette and make it yours.</p></div><a href="looks.html" class="text-link">Explore the Outfit Gallery <span aria-hidden="true">↗</span></a></aside>
+  </main>
+  <footer class="site-footer" data-footer></footer>
+</body>
+</html>
+

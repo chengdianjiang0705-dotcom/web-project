@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#263e34">
+  <title>Outfit Gallery — Outfit Color Lab</title>
+  <meta name="description" content="Explore six easy outfit color combinations. Filter by neutrals, blues, greens or a statement color and try any look in the lab.">
+  <meta property="og:title" content="Outfit Gallery — Outfit Color Lab">
+  <meta property="og:description" content="Explore six easy outfit color combinations. Filter by neutrals, blues, greens or a statement color and try any look in the lab.">
+  <meta property="og:image" content="https://outfit-color-lab.daintybow32.chatgpt.site/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Outfit Color Lab. Explore colors before you get dressed. Three illustrated outfit palettes.">
+  <meta property="og:url" content="https://outfit-color-lab.daintybow32.chatgpt.site/looks.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://outfit-color-lab.daintybow32.chatgpt.site/images/og-image.jpg">
+  <link rel="canonical" href="https://outfit-color-lab.daintybow32.chatgpt.site/looks.html">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="nav.js"></script>
+  <script type="module" src="gallery.js"></script>
+</head>
+<body data-page="looks">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-header></header>
+  <main id="main">
+    <section class="page-intro container"><div class="eyebrow"><span class="eyebrow-dot"></span> BORROW A LITTLE INSPIRATION</div><div class="intro-row"><div><h1>Everyday looks. Fresh eyes.</h1><p>Six starting points for whatever the day has planned. Find one you like, then make it your own in the lab.</p><p class="subtitle-cn" lang="zh-CN">六套日常配色，都是下一次实验的起点。</p></div><p class="right-note">Three pieces.<br>A different feeling every time.</p></div></section>
+    <section class="container" aria-label="Outfit combinations">
+      <div class="gallery-filters" aria-label="Filter outfits"><button type="button" class="filter-button" data-filter="all" aria-pressed="true">All looks</button><button type="button" class="filter-button" data-filter="neutral" aria-pressed="false">Neutrals</button><button type="button" class="filter-button" data-filter="blue" aria-pressed="false">Blues</button><button type="button" class="filter-button" data-filter="green" aria-pressed="false">Greens</button><button type="button" class="filter-button" data-filter="statement" aria-pressed="false">A pop of color</button><span class="gallery-count" role="status" aria-live="polite" id="gallery-count">6 looks to explore</span></div>
+      <div class="look-grid gallery-grid" id="gallery"></div>
+    </section>
+    <aside class="gallery-footer container"><div><h2>Your next favorite combination?</h2><p>It might be the one you haven't tried yet.</p></div><a class="button" href="lab.html">Make your own look <span aria-hidden="true">↗</span></a></aside>
+  </main>
+  <footer class="site-footer" data-footer></footer>
+</body>
+</html>
+

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#263e34">
+  <title>Project Process — Outfit Color Lab</title>
+  <meta name="description" content="The Outfit Color Lab coursework proposal, audience, page plan, original ideas and development decisions.">
+  <meta property="og:title" content="Project Process — Outfit Color Lab">
+  <meta property="og:description" content="The Outfit Color Lab coursework proposal, audience, page plan, original ideas and development decisions.">
+  <meta property="og:image" content="https://outfit-color-lab.daintybow32.chatgpt.site/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Outfit Color Lab. Explore colors before you get dressed. Three illustrated outfit palettes.">
+  <meta property="og:url" content="https://outfit-color-lab.daintybow32.chatgpt.site/project.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://outfit-color-lab.daintybow32.chatgpt.site/images/og-image.jpg">
+  <link rel="canonical" href="https://outfit-color-lab.daintybow32.chatgpt.site/project.html">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="nav.js"></script>
+  
+</head>
+<body data-page="project">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-header></header>
+  <main id="main">
+    <section class="page-intro container"><div class="eyebrow">WEB TECHNOLOGIES 2026 / PROJECT NOTES</div><h1>From an idea to an experiment.</h1><p>Project planning, scope and the actual development process.</p></section>
+    <article class="project-content container">
+      <h2>Five ideas / 五个想法</h2><table><thead><tr><th>Idea</th><th>For whom?</th><th>Main interaction</th></tr></thead><tbody><tr><td>Outfit Color Lab</td><td>Students exploring everyday outfit colors</td><td>Recolor three garment illustrations</td></tr><tr><td>Study Break Studio</td><td>Students who need a short screen break</td><td>Choose a break length and start a timer</td></tr><tr><td>Campus Plant Guide</td><td>Students caring for a first indoor plant</td><td>Filter plants by room conditions</td></tr><tr><td>Pantry Lunch Ideas</td><td>Students cooking with a small pantry</td><td>Filter lunch ideas by ingredients</td></tr><tr><td>Weekend Photo Walks</td><td>Beginner photographers with limited time</td><td>Filter sample routes by duration</td></tr></tbody></table>
+      <h2>The three strongest directions</h2><table><thead><tr><th>Idea</th><th>Four pages</th><th>Most important page</th><th>Smallest complete version</th></tr></thead><tbody><tr><td>Outfit Color Lab</td><td>Home, Guide, Lab, Gallery</td><td>Color Lab</td><td>Three editable parts, six colors, six presets</td></tr><tr><td>Campus Plant Guide</td><td>Home, Plants, Care, Light Finder</td><td>Light Finder</td><td>Filter a small sourced plant selection by light</td></tr><tr><td>Study Break Studio</td><td>Home, Why Breaks, Timer, Activities</td><td>Timer</td><td>Start/reset a browser timer and choose an activity</td></tr></tbody></table>
+      <h2>Preferred project: Outfit Color Lab</h2><p><strong>One sentence:</strong> A simple color tool that helps students plan outfits using clothes they already own.</p>
+      <p>Outfit Color Lab is an interactive website for exploring how clothing colors work together. Its main task is to preview a top, trousers and shoes, then change their colors independently. It aims to make a small everyday decision easier to explore.</p>
+      <p>The intended audience is university students who have useful clothes but feel unsure about combining their colors. A typical visitor already has blue jeans and wants to compare a light, dark or warmer top before getting dressed.</p>
+      <p>The four main pages have separate roles. Home introduces the idea; Color Guide offers three starting points; Color Lab is the working tool; Outfit Gallery supplies six combinations that can be loaded into the lab.</p>
+      <p>The implementation uses semantic HTML, responsive CSS and browser JavaScript. A JavaScript object stores the current colors, and CSS variables update original SVG garments. Preset IDs travel between pages in the URL. The site needs no account, server or database.</p>
+      <h2>The smallest version worth showing</h2><ul><li>Four connected pages, working on desktop and phone.</li><li>Independent selection and recoloring for three garments.</li><li>Named swatches, randomize, reset and six URL-based presets.</li><li>Original vector illustrations and credited external photography.</li><li>Course-size share cover, favicon, app icon, screenshots, source history and a live HTTPS site.</li></ul>
+      <h2>Poster sketch</h2><p>The cover uses a warm paper background, the project title and three original outfits. Small colored squares echo the website mark. The exported JPEG is 1200 × 630 pixels and below 100 KB.</p><img src="images/og-image.jpg" alt="Outfit Color Lab project cover with three colored outfits" width="1200" height="630" loading="lazy" style="margin-top:18px;border:1px solid #dfe3d8">
+      <h2>Development process</h2><p>Development began on 15 October 2026, Asia/Shanghai. Git commits record real stages from this session: planning and shared navigation, original garment artwork and layout, interactive controls, researched content and assets, then testing and deployment. Same-day commits do not represent earlier weeks of development.</p>
+      <h3>Why these decisions?</h3><ul><li><strong>Simple SVG:</strong> lets a user focus on color and makes the recoloring logic visible during the defence.</li><li><strong>Named swatches:</strong> prevent the controls from depending on color alone.</li><li><strong>Separate HTML pages:</strong> make navigation and each page's purpose explicit.</li><li><strong>Local image files:</strong> support a reliable local backup demonstration.</li><li><strong>No database:</strong> the core task only needs temporary state in the browser.</li></ul>
+      <h3>AI assistance and material sources</h3><p>AI assisted with implementation, draft copy, vector artwork and testing. The student needs to review and understand the work before presenting it. Photographs are by Sarah Dorweiler and Daryl Han on Unsplash. Color references are linked on the Color Guide and in every page's footer. Detailed source notes and test evidence are included in the repository.</p>
+      <p style="margin-top:25px"><a class="button" href="lab.html">Show me the experiment <span aria-hidden="true">↗</span></a></p>
+    </article>
+  </main>
+  <footer class="site-footer" data-footer></footer>
+</body>
+</html>
+
