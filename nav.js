@@ -1,0 +1,16 @@
+const page = document.body.dataset.page;
+const logo = `<span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>Outfit Color Lab<span class="brand-caption">穿搭配色实验室</span></span>`;
+const links = [['home', 'index.html', 'Home'], ['guide', 'guide.html', 'Color Guide'], ['lab', 'lab.html', 'Color Lab'], ['looks', 'looks.html', 'Outfit Gallery']];
+document.querySelector('[data-header]').innerHTML = `<div class="nav-wrap"><a class="brand" href="index.html" aria-label="Outfit Color Lab home">${logo}</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation"><span></span><span></span></button><nav id="main-nav" aria-label="Main navigation">${links.map(([id, href, label]) => `<a href="${href}"${id === page ? ' aria-current="page"' : ''}>${label}</a>`).join('')}</nav><a class="nav-cta" href="lab.html">Let's experiment <span aria-hidden="true">↗</span></a></div>`;
+const toggle = document.querySelector('.menu-toggle');
+toggle.addEventListener('click', () => {
+  const expanded = toggle.getAttribute('aria-expanded') !== 'true';
+  toggle.setAttribute('aria-expanded', String(expanded));
+  toggle.setAttribute('aria-label', expanded ? 'Close navigation' : 'Open navigation');
+  document.querySelector('#main-nav').classList.toggle('is-open', expanded);
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') { toggle.click(); toggle.focus(); }
+});
+document.querySelector('[data-footer]').innerHTML = `<div class="footer-top"><a class="brand" href="index.html">${logo}</a><p>A little curiosity. A whole new combination.</p><a href="lab.html" class="text-link">Find your colors <span aria-hidden="true">↗</span></a></div><div class="footer-bottom"><span>© 2026 Outfit Color Lab · A student project</span><span>Made for experimenting, with what you already own.</span><a href="#source-notes" class="source-link">Sources & credits</a></div><details id="source-notes" class="source-notes"><summary>About this project & material sources</summary><p>Designed and built with AI assistance for Web Technologies 2026. All clothing illustrations, icons and the share cover are original code-drawn artwork. Photography: <a href="https://unsplash.com/photos/white-crew-neck-t-shirt-and-brown-leather-boots-gUPiTDBdRe4" target="_blank" rel="noopener noreferrer">Sarah Dorweiler</a> and <a href="https://unsplash.com/photos/a-row-of-clothes-on-a-rack-xrtVRkylVhs" target="_blank" rel="noopener noreferrer">Daryl Han</a>, used under the <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer">Unsplash License</a>. Color theory references: <a href="https://www.adobe.com/uk/creativecloud/design/discover/complementary-colors.html" target="_blank" rel="noopener noreferrer">Adobe: complementary colors</a> and <a href="https://www.adobe.com/uk/creativecloud/design/discover/color-wheel.html" target="_blank" rel="noopener noreferrer">Adobe: color wheel</a>. Outfit names and combinations are illustrative project examples. Colors on real clothes can vary with material, screens and light. <a href="project.html">Project process →</a></p></details>`;
+document.querySelector('.source-link').addEventListener('click', () => { document.querySelector('#source-notes').open = true; });

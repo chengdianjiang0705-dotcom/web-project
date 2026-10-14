@@ -1,0 +1,9 @@
+dist/
+node_modules/
+tmp/
+.DS_Store
+Thumbs.db
+*.zip
+.env
+.env.*
+.openai/*.local.json
