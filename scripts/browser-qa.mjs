@@ -9,6 +9,7 @@ const moduleName = process.env.PLAYWRIGHT_MODULE;
 const { chromium } = await import(moduleName ? pathToFileURL(moduleName).href : 'playwright');
 const browser = await chromium.launch({ headless: true, ...(process.env.BROWSER_PATH ? { executablePath: process.env.BROWSER_PATH } : {}) });
 const base = process.env.QA_URL || 'http://127.0.0.1:4173';
+const localServer = process.argv.includes('--serve') ? (await import('./serve.mjs')).server : null;
 const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, deviceScaleFactor: 1, permissions: ['clipboard-read', 'clipboard-write'], reducedMotion: 'reduce' });
 const page = await context.newPage();
 const errors = [];
@@ -71,7 +72,7 @@ try {
     assert.equal(await page.locator('.look-card:visible').count(), count);
   }
   checks.push('All gallery filters show the expected look counts.');
-  for (const [url, name] of [['index.html', 'desktop-home'], ['lab.html', 'desktop-lab']]) {
+  for (const [url, name] of [['index.html', 'desktop-home'], ['lab.html', 'desktop-lab'], ['guide.html', 'desktop-guide'], ['looks.html', 'desktop-gallery']]) {
     await page.goto(`${base}/${url}`);
     await page.evaluate(() => Promise.all([...document.images].map(image => image.decode().catch(() => {}))));
     await page.screenshot({ path: `docs/screenshots/${name}.png`, fullPage: true });
@@ -97,6 +98,7 @@ try {
   await page.locator('[data-color="#78866B"]').click();
   assert.equal((await getOutfit()).shoes, '#78866B');
   await page.locator('#reset').click();
+  await page.evaluate(() => window.scrollTo(0, 0));
   await page.screenshot({ path: 'docs/screenshots/mobile-lab.png', fullPage: true });
   await page.goto(`${base}/index.html`);
   await page.evaluate(() => Promise.all([...document.images].map(image => image.decode().catch(() => {}))));
@@ -106,4 +108,4 @@ try {
   const report = `# Browser verification\n\nDate: 15 October 2026 (Asia/Shanghai).\n\nURL tested: ${base}\n\nBrowser: ${await browser.version()} (headless Chromium / Microsoft Edge).\n\n${checks.map(check => `- PASS: ${check}`).join('\n')}\n- PASS: No JavaScript page errors or failed local asset requests.\n\nDesktop screenshots: 1440 px wide. Mobile screenshots: 390 px wide.\n\nAll functional checks passed. Visual screenshots must also be inspected before delivery.\n`;
   await writeFile('docs/TESTING.md', report);
   console.log(report);
-} finally { await browser.close(); }
+} finally { await browser.close(); localServer?.close(); }

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#F8F8F3"/>
+<rect x="66" y="58" width="12" height="12" rx="2" fill="#78866B"/><rect x="82" y="58" width="12" height="12" rx="2" fill="#C7AD8A"/><rect x="66" y="74" width="12" height="12" rx="2" fill="#7AA5C6"/><rect x="82" y="74" width="12" height="12" rx="2" fill="#B9654D"/>
+<text x="110" y="77" font-family="Arial, sans-serif" font-size="15" fill="#6A736A" letter-spacing="1">A LITTLE THEORY. A LOT OF YOU.</text>
+<text x="63" y="250" font-family="Georgia, serif" font-size="79" fill="#263E34">Outfit</text>
+<text x="63" y="340" font-family="Georgia, serif" font-size="79" fill="#263E34">Color Lab</text>
+<text x="67" y="411" font-family="Arial, sans-serif" font-size="24" fill="#4E5951">Explore colors before</text>
+<text x="67" y="445" font-family="Arial, sans-serif" font-size="24" fill="#4E5951">you get dressed.</text>
+<path d="M67 511h393" stroke="#D8DED1"/>
+<text x="67" y="552" font-family="Arial, sans-serif" font-size="14" letter-spacing="1" fill="#6A736A">YOUR WARDROBE, REMIXED.</text>
+<rect x="526" y="108" width="195" height="414" rx="7" fill="#E8EDF0"/><text x="543" y="140" font-family="Arial, sans-serif" font-size="10" fill="#6A736A" letter-spacing="1">LOOK / 01</text><svg x="528" y="157" width="191" height="320" class="outfit-svg " viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Light blue top, Charcoal trousers, Off-white shoes" style="--top:#7AA5C6;--trousers:#30343B;--shoes:#F7F4EC">
+  <ellipse cx="150" cy="475" rx="104" ry="9" fill="#20382D" opacity=".05"/>
+  <g  class="garment garment-top" fill="#7AA5C6" stroke="#29372F" stroke-opacity=".22" stroke-width="1.2" stroke-linejoin="round">
+    <path d="M112 28 90 34 45 69 68 113 94 98 91 193 Q149 204 209 193 L206 98 232 113 255 69 210 34 188 28 Q172 39 150 39 Q128 39 112 28Z"/>
+    <path d="M112 28 Q120 63 150 64 Q180 63 188 28 Q172 39 150 39 Q128 39 112 28Z" fill="#fff" fill-opacity=".17"/>
+    <path d="M119 32 Q126 56 150 56 Q174 56 181 32M94 98 97 71M206 98 203 71M55 81 74 116M245 81 226 116M92 184 Q150 194 208 184" fill="none"/>
+    <path d="M99 78 111 90 105 177M201 78 191 91 197 177" fill="none" stroke-opacity=".08" stroke-width="3"/>
+  </g>
+  <g  class="garment garment-trousers" fill="#30343B" stroke="#29372F" stroke-opacity=".25" stroke-width="1.2" stroke-linejoin="round">
+    <path d="M99 219 Q151 214 201 219 L210 424 Q188 431 161 425 L150 286 139 425 Q112 431 90 424Z"/>
+    <path d="M99 230 Q150 225 202 230M150 220 150 271 157 278M113 231 Q113 252 97 261M189 231 Q189 252 205 261M120 274 113 416M180 274 187 416M92 414 Q115 420 140 414M160 414 Q184 420 208 414" fill="none"/>
+    <path d="M105 220 105 231M129 218 129 229M173 218 173 229M196 220 196 231" fill="none" stroke-width="3"/>
+    <circle cx="151" cy="226" r="2" fill="#eee" fill-opacity=".4" stroke="none"/>
+  </g>
+  <g  class="garment garment-shoes" fill="#F7F4EC" stroke="#29372F" stroke-opacity=".28" stroke-width="1.2" stroke-linejoin="round">
+    <path d="M91 443 123 442 135 456 137 472 61 472 Q56 461 67 457 L88 451Z"/>
+    <path d="M177 442 209 443 212 451 233 457 Q244 461 239 472 L163 472 165 456Z"/>
+    <path d="M60 466 136 466M164 466 240 466M89 449 111 452M85 453 115 456M81 457 118 460M211 449 189 452M215 453 185 456M219 457 182 460" fill="none"/>
+    <path d="M94 441 121 441 124 448 92 448ZM179 441 206 441 208 448 176 448Z" fill="#29372F" fill-opacity=".11"/>
+  </g></svg><circle cx="601" cy="500" r="6" fill="#7AA5C6" stroke="#BBC2B4" stroke-width=".5"/><circle cx="621" cy="500" r="6" fill="#30343B" stroke="#BBC2B4" stroke-width=".5"/><circle cx="641" cy="500" r="6" fill="#F7F4EC" stroke="#BBC2B4" stroke-width=".5"/><rect x="739" y="108" width="195" height="414" rx="7" fill="#E7EBE1"/><text x="756" y="140" font-family="Arial, sans-serif" font-size="10" fill="#6A736A" letter-spacing="1">LOOK / 02</text><svg x="741" y="157" width="191" height="320" class="outfit-svg " viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Olive top, Beige trousers, Off-white shoes" style="--top:#78866B;--trousers:#C7AD8A;--shoes:#F7F4EC">
+  <ellipse cx="150" cy="475" rx="104" ry="9" fill="#20382D" opacity=".05"/>
+  <g  class="garment garment-top" fill="#78866B" stroke="#29372F" stroke-opacity=".22" stroke-width="1.2" stroke-linejoin="round">
+    <path d="M112 28 90 34 45 69 68 113 94 98 91 193 Q149 204 209 193 L206 98 232 113 255 69 210 34 188 28 Q172 39 150 39 Q128 39 112 28Z"/>
+    <path d="M112 28 Q120 63 150 64 Q180 63 188 28 Q172 39 150 39 Q128 39 112 28Z" fill="#fff" fill-opacity=".17"/>
+    <path d="M119 32 Q126 56 150 56 Q174 56 181 32M94 98 97 71M206 98 203 71M55 81 74 116M245 81 226 116M92 184 Q150 194 208 184" fill="none"/>
+    <path d="M99 78 111 90 105 177M201 78 191 91 197 177" fill="none" stroke-opacity=".08" stroke-width="3"/>
+  </g>
+  <g  class="garment garment-trousers" fill="#C7AD8A" stroke="#29372F" stroke-opacity=".25" stroke-width="1.2" stroke-linejoin="round">
+    <path d="M99 219 Q151 214 201 219 L210 424 Q188 431 161 425 L150 286 139 425 Q112 431 90 424Z"/>
+    <path d="M99 230 Q150 225 202 230M150 220 150 271 157 278M113 231 Q113 252 97 261M189 231 Q189 252 205 261M120 274 113 416M180 274 187 416M92 414 Q115 420 140 414M160 414 Q184 420 208 414" fill="none"/>
+    <path d="M105 220 105 231M129 218 129 229M173 218 173 229M196 220 196 231" fill="none" stroke-width="3"/>
+    <circle cx="151" cy="226" r="2" fill="#eee" fill-opacity=".4" stroke="none"/>
+  </g>
+  <g  class="garment garment-shoes" fill="#F7F4EC" stroke="#29372F" stroke-opacity=".28" stroke-width="1.2" stroke-linejoin="round">
+    <path d="M91 443 123 442 135 456 137 472 61 472 Q56 461 67 457 L88 451Z"/>
+    <path d="M177 442 209 443 212 451 233 457 Q244 461 239 472 L163 472 165 456Z"/>
+    <path d="M60 466 136 466M164 466 240 466M89 449 111 452M85 453 115 456M81 457 118 460M211 449 189 452M215 453 185 456M219 457 182 460" fill="none"/>
+    <path d="M94 441 121 441 124 448 92 448ZM179 441 206 441 208 448 176 448Z" fill="#29372F" fill-opacity=".11"/>
+  </g></svg><circle cx="814" cy="500" r="6" fill="#78866B" stroke="#BBC2B4" stroke-width=".5"/><circle cx="834" cy="500" r="6" fill="#C7AD8A" stroke="#BBC2B4" stroke-width=".5"/><circle cx="854" cy="500" r="6" fill="#F7F4EC" stroke="#BBC2B4" stroke-width=".5"/><rect x="952" y="108" width="195" height="414" rx="7" fill="#F0E5DE"/><text x="969" y="140" font-family="Arial, sans-serif" font-size="10" fill="#6A736A" letter-spacing="1">LOOK / 03</text><svg x="954" y="157" width="191" height="320" class="outfit-svg " viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Terracotta top, Charcoal trousers, Off-white shoes" style="--top:#B9654D;--trousers:#30343B;--shoes:#F7F4EC">
+  <ellipse cx="150" cy="475" rx="104" ry="9" fill="#20382D" opacity=".05"/>
+  <g  class="garment garment-top" fill="#B9654D" stroke="#29372F" stroke-opacity=".22" stroke-width="1.2" stroke-linejoin="round">
+    <path d="M112 28 90 34 45 69 68 113 94 98 91 193 Q149 204 209 193 L206 98 232 113 255 69 210 34 188 28 Q172 39 150 39 Q128 39 112 28Z"/>
+    <path d="M112 28 Q120 63 150 64 Q180 63 188 28 Q172 39 150 39 Q128 39 112 28Z" fill="#fff" fill-opacity=".17"/>
+    <path d="M119 32 Q126 56 150 56 Q174 56 181 32M94 98 97 71M206 98 203 71M55 81 74 116M245 81 226 116M92 184 Q150 194 208 184" fill="none"/>
+    <path d="M99 78 111 90 105 177M201 78 191 91 197 177" fill="none" stroke-opacity=".08" stroke-width="3"/>
+  </g>
+  <g  class="garment garment-trousers" fill="#30343B" stroke="#29372F" stroke-opacity=".25" stroke-width="1.2" stroke-linejoin="round">
+    <path d="M99 219 Q151 214 201 219 L210 424 Q188 431 161 425 L150 286 139 425 Q112 431 90 424Z"/>
+    <path d="M99 230 Q150 225 202 230M150 220 150 271 157 278M113 231 Q113 252 97 261M189 231 Q189 252 205 261M120 274 113 416M180 274 187 416M92 414 Q115 420 140 414M160 414 Q184 420 208 414" fill="none"/>
+    <path d="M105 220 105 231M129 218 129 229M173 218 173 229M196 220 196 231" fill="none" stroke-width="3"/>
+    <circle cx="151" cy="226" r="2" fill="#eee" fill-opacity=".4" stroke="none"/>
+  </g>
+  <g  class="garment garment-shoes" fill="#F7F4EC" stroke="#29372F" stroke-opacity=".28" stroke-width="1.2" stroke-linejoin="round">
+    <path d="M91 443 123 442 135 456 137 472 61 472 Q56 461 67 457 L88 451Z"/>
+    <path d="M177 442 209 443 212 451 233 457 Q244 461 239 472 L163 472 165 456Z"/>
+    <path d="M60 466 136 466M164 466 240 466M89 449 111 452M85 453 115 456M81 457 118 460M211 449 189 452M215 453 185 456M219 457 182 460" fill="none"/>
+    <path d="M94 441 121 441 124 448 92 448ZM179 441 206 441 208 448 176 448Z" fill="#29372F" fill-opacity=".11"/>
+  </g></svg><circle cx="1027" cy="500" r="6" fill="#B9654D" stroke="#BBC2B4" stroke-width=".5"/><circle cx="1047" cy="500" r="6" fill="#30343B" stroke="#BBC2B4" stroke-width=".5"/><circle cx="1067" cy="500" r="6" fill="#F7F4EC" stroke="#BBC2B4" stroke-width=".5"/>
+</svg>

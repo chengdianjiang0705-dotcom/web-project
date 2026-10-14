@@ -10,11 +10,17 @@ const result = spawnSync('git', ['credential', 'fill'], {
 const token = result.stdout?.split(/\r?\n/).find(line => line.startsWith('password='))?.slice(9);
 if (!token) throw new Error('No GitHub credential available. Complete the device login first.');
 async function api(path, method = 'GET', body) {
-  const response = await fetch(`https://api.github.com${path}`, {
+  const request = {
     method,
     headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28', 'User-Agent': 'Outfit-Color-Lab-Setup', ...(body ? { 'Content-Type': 'application/json' } : {}) },
     ...(body ? { body: JSON.stringify(body) } : {})
-  });
+  };
+  let response;
+  // Read requests may be retried after transient connection failures; mutations are never blindly repeated.
+  for (let attempt = 0; attempt < (method === 'GET' ? 3 : 1); attempt++) {
+    try { response = await fetch(`https://api.github.com${path}`, { ...request, signal: AbortSignal.timeout(20000) }); break; }
+    catch (error) { if (method !== 'GET' || attempt === 2) throw error; }
+  }
   const data = await response.json().catch(() => ({}));
   return { status: response.status, data };
 }
